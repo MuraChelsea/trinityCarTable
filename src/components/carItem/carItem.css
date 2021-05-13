@@ -1,0 +1,58 @@
+.carItem {
+  /* background-color: rgba(0,0,0,.2); */
+}
+
+.carItem:hover {
+  background-color: rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.carItem__active {
+  background-color: rgba(0,0,0,.1);
+}
+
+.carItem__grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+}
+
+.carItem___section {
+  border: 1px solid;
+  padding: 1rem;
+  background-color: rgba(0,0,0,.2);
+}
+
+.groupCard__title {
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(0,0,0,.2);
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.carExtend {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.carExtend__active {
+  max-height: 1000px;
+}
+
+.carExtend__content {
+  padding: 1rem;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.cardExtend__grid {
+  display: grid;
+  grid-template-columns: repeat(3,auto); 
+}
+
+.groupCard {
+  margin: 10px 0;
+}
